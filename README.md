@@ -5,7 +5,7 @@ I'm maintaning a stable branch of the latest pbs. I intend to only fix bugs and 
 functionality that is not needed, as I'm using this tool in production code.
 
 
-The original author is developing this tool futher:
+The original author is developing this tool futher and he renamed it to 'sh'
 
 https://github.com/amoffat/sh
 
