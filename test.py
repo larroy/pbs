@@ -141,10 +141,14 @@ print pbs.HERP, len(os.environ)
         self.assertEqual(which("fjoawjefojawe"), None)
         self.assertEqual(which("ls"), str(ls))
 
-
+    @requires_posix
     def test_no_arg(self):
+        import pwd
         from pbs import whoami
         u1 = whoami().strip()
+        u2 = pwd.getpwuid(os.geteuid())[0]
+        self.assertEqual(u1, u2)
+        self.assertEqual(which("ls"), str(ls))
 
 
     def test_exception(self):
