@@ -1,17 +1,20 @@
-PBS has now become sh.
-======================
+PBS
+===
 
-PBS will no longer be supported.  Please upgrade here:
+I'm maintaning a stable branch of the latest pbs. I intend to only fix bugs and not add any
+functionality that is not needed, as I'm using this tool in production code.
 
-http://pypi.python.org/pypi/sh
 
-And migrate your existin code with:
+The original author is developing this tool futher:
 
-```python
-import sh as pbs
-```
+https://github.com/amoffat/sh
 
-* * *
+# News
+
+* Added win32 support, automatically adds '.exe' suffix on tool search
+
+
+# Introduction
 
 PBS is a unique subprocess wrapper that maps your system programs to
 Python functions dynamically.  PBS helps you write shell scripts in
