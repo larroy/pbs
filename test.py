@@ -128,14 +128,6 @@ print os.environ["HERP"], len(os.environ)
         out = python(py.name, _env=env).strip()
         self.assertEqual(out, "DERP 1")
 
-        py = create_tmp_test("""
-import pbs, os
-print pbs.HERP, len(os.environ)
-""")
-        out = python(py.name, _env=env).strip()
-        self.assertEqual(out, "DERP 1")
-
-
     def test_which(self):
         from pbs import which, ls
         self.assertEqual(which("fjoawjefojawe"), None)
