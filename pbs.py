@@ -237,8 +237,8 @@ class Command(object):
         "fg": False, # run command in foreground
         "bg": False, # run command in background
         "with": False, # prepend the command to every command after it
-        "out": sys.stdout, # redirect STDOUT
-        "err": sys.stderr, # redirect STDERR
+        "out": None, # redirect STDOUT
+        "err": None, # redirect STDERR
         "err_to_out": None, # redirect STDERR to STDOUT
         "in": None,
         "env": os.environ,
